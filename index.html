@@ -19,9 +19,10 @@
           Практикум: Консольний термінал касира
         </h1>
         <p class="text-slate-500 text-sm mt-1">
-          Інтерактивне відпрацювання циклів JS: <code class="bg-slate-100 px-1.5 py-0.5 rounded text-emerald-700 font-semibold">for</code>, 
-          <code class="bg-slate-100 px-1.5 py-0.5 rounded text-amber-700 font-semibold">while (бонуси)</code>, 
-          <code class="bg-slate-100 px-1.5 py-0.5 rounded text-blue-700 font-semibold">do...while</code> та 
+          Інтерактивне відпрацювання циклів JS: <code class="bg-slate-100 px-1.5 py-0.5 rounded text-emerald-700 font-semibold">for</code>,
+          <code class="bg-slate-100 px-1.5 py-0.5 rounded text-cyan-700 font-semibold">for...of</code>,
+          <code class="bg-slate-100 px-1.5 py-0.5 rounded text-amber-700 font-semibold">while (бонуси)</code>,
+          <code class="bg-slate-100 px-1.5 py-0.5 rounded text-blue-700 font-semibold">do...while</code> та
           <code class="bg-slate-100 px-1.5 py-0.5 rounded text-purple-700 font-semibold">while (решта)</code>.
         </p>
       </div>
@@ -53,10 +54,23 @@
           </button>
         </div>
 
+        <div class="bg-white rounded-2xl p-6 shadow-sm border border-slate-200">
+          <div class="flex items-center justify-between mb-4">
+            <span class="px-3 py-1 bg-cyan-50 text-cyan-700 text-xs font-bold rounded-full uppercase">Крок 2 &bull; Цикл for...of</span>
+            <span class="text-xs text-slate-400">Перевірка кожного символу без масивів</span>
+          </div>
+          <h2 class="text-lg font-bold text-slate-900 mb-2">Валідація промокоду зі сканера</h2>
+          <div class="flex gap-3">
+            <input id="promoCodeInput" value="SALE-2024-UA" class="flex-1 px-3 py-2 border rounded-xl text-sm font-semibold focus:outline-cyan-500" aria-label="Промокод">
+            <button onclick="validatePromoCode()" class="px-5 py-2 bg-cyan-600 hover:bg-cyan-700 text-white font-semibold rounded-xl transition text-sm">Перевірити</button>
+          </div>
+          <p id="promoValidationMsg" class="text-xs text-slate-500 mt-2"></p>
+        </div>
+
         
         <div class="bg-white rounded-2xl p-6 shadow-sm border border-slate-200">
           <div class="flex items-center justify-between mb-4">
-            <span class="px-3 py-1 bg-amber-50 text-amber-700 text-xs font-bold rounded-full uppercase">Крок 2 &bull; Цикл while (без масивів)</span>
+            <span class="px-3 py-1 bg-amber-50 text-amber-700 text-xs font-bold rounded-full uppercase">Крок 3 &bull; Цикл while (без масивів)</span>
             <span class="text-xs text-slate-400">Списання по 50 балів, макс. 50% чека</span>
           </div>
           <h2 class="text-lg font-bold text-slate-900 mb-2">Програма лояльності: Списання бонусів</h2>
@@ -84,7 +98,7 @@
         
         <div class="bg-white rounded-2xl p-6 shadow-sm border border-slate-200">
           <div class="flex items-center justify-between mb-4">
-            <span class="px-3 py-1 bg-blue-50 text-blue-700 text-xs font-bold rounded-full uppercase">Крок 3 &bull; Цикл do...while</span>
+            <span class="px-3 py-1 bg-blue-50 text-blue-700 text-xs font-bold rounded-full uppercase">Крок 4 &bull; Цикл do...while</span>
             <span class="text-xs text-slate-400">Валідація суми оплати</span>
           </div>
           <h2 class="text-lg font-bold text-slate-900 mb-2">Оплата готівкою на касі</h2>
@@ -104,7 +118,7 @@
         
         <div class="bg-white rounded-2xl p-6 shadow-sm border border-slate-200">
           <div class="flex items-center justify-between mb-4">
-            <span class="px-3 py-1 bg-purple-50 text-purple-700 text-xs font-bold rounded-full uppercase">Крок 4 &bull; Цикл while</span>
+            <span class="px-3 py-1 bg-purple-50 text-purple-700 text-xs font-bold rounded-full uppercase">Крок 5 &bull; Цикл while</span>
             <span class="text-xs text-slate-400">Видача купюрами: 500, 200, 100...</span>
           </div>
           <h2 class="text-lg font-bold text-slate-900 mb-2">Видача решти покупцю</h2>
